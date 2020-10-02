@@ -6,7 +6,7 @@ The data files ending in Region_Data.txt contain SNP values that have been match
 
 The SNPs were cleaned by eliminating any SNP that had a missing value of 9 for all individuals, even if that SNP wasn't missing for the other populations.
 
-Then a T1 statistic is calculated.
+Then a T1 statistic is calculated. This takes a long time to compute, so you can also just load the results of that calculation directly with the T1_matrix.csv file. 
 
 A distance matrix is calculated as every element being 1 - T1 for each row/columns corresponding T1 statistic
 
