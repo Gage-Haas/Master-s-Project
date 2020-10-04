@@ -24,8 +24,6 @@ The dissimilarity matrix is then calculated as the variance of the distances bet
 
 In order to confirm that this dissimilarity matrix was really able to reduce the genetic variation within populations. I PCA reduced the dissimilarity matrix into 3 principal components, and then I clustered these principal components with K -Means. I then generated two plots of the principal components, one with the true class assignments over the components and the other with the K- Means class assignments. You can see from these graphs that this matrix transformation provides some differentiation between like populations when the dissimilar populations are also included.
 
-Because this technique does a better job of differentiating the individuals than a regular K - Means, it could be interesting to look at how this technique would improve the accuracy of a genetic classifier network that is attempting to guess an individuals ancestry based on SNP data. 
-
 Although the K - Means gave better results using the dissimilarity matrix, I tried to explore an improvement of this clustering by utilizing a genetic algorithm to maximize the between, or among populations, sum of squares. This will conversely minimize the genetic variance within populations as well. 
 
 The Sum of Squares Among Populations SSAP is defined as the Sum of Squares of the Dissimilarity matrix - the Sum of Squares of each population.
